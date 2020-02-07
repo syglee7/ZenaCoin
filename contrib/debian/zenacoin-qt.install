@@ -1,0 +1,6 @@
+usr/local/bin/zenacoin-qt usr/bin
+share/pixmaps/zenacoin32.xpm usr/share/pixmaps
+share/pixmaps/zenacoin16.xpm usr/share/pixmaps
+share/pixmaps/zenacoin128.png usr/share/pixmaps
+debian/zenacoin-qt.desktop usr/share/applications
+debian/zenacoin-qt.protocol usr/share/kde4/services/

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Zenacoin Core
+Comment=Connect to the Zenacoin P2P Network
+Comment[de]=Verbinde mit dem Zenacoin peer-to-peer Netzwerk
+Comment[fr]=Zenacoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Zenacoin, eşten eşe kriptografik sanal para birimi
+Exec=zenacoin-qt %u
+Terminal=false
+Type=Application
+Icon=zenacoin128
+MimeType=x-scheme-handler/zenacoin;
+Categories=Office;Finance;

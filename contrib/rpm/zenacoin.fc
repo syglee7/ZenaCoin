@@ -1,0 +1,8 @@
+/usr/bin/zenacoin-cli		--	gen_context(system_u:object_r:zenacoin_exec_t,s0)
+/usr/sbin/zenacoind		--	gen_context(system_u:object_r:zenacoin_exec_t,s0)
+/usr/lib(64)?/zenacoin/zenacoind		--	gen_context(system_u:object_r:zenacoin_exec_t,s0)
+
+/etc/zenacoin(/.*)?		gen_context(system_u:object_r:zenacoin_conf_t,s0)
+/var/lib/zenacoin(/.*)?		gen_context(system_u:object_r:zenacoin_var_lib_t,s0)
+
+(/var)?/run/zenacoind(/.*)?   gen_context(system_u:object_r:zenacoin_var_run_t,s0)

@@ -1,0 +1,22 @@
+[Unit]
+Description=Zenacoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=zenacoin
+Group=zenacoin
+
+Type=forking
+PIDFile=/var/lib/zenacoind/zenacoind.pid
+ExecStart=/usr/bin/zenacoind -daemon -pid=/var/lib/zenacoind/zenacoind.pid \
+-conf=/etc/zenacoin/zenacoin.conf -datadir=/var/lib/zenacoind -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

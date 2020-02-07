@@ -1,0 +1,33 @@
+# /etc/conf.d/zenacoind: config file for /etc/init.d/zenacoind
+
+# Config file location
+#ZENACOIND_CONFIGFILE="/etc/zenacoin/zenacoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $ZENACOIND_USER)
+#ZENACOIND_PIDDIR="/var/run/zenacoind"
+
+# What filename to give the pidfile
+#ZENACOIND_PIDFILE="${ZENACOIND_PIDDIR}/zenacoind.pid"
+
+# Where to write zenacoind data (be mindful that the blockchain is large)
+#ZENACOIND_DATADIR="/var/lib/zenacoind"
+
+# User and group to own zenacoind process
+#ZENACOIND_USER="zenacoin"
+#ZENACOIND_GROUP="zenacoin"
+
+# Path to zenacoind executable
+#ZENACOIND_BIN="/usr/bin/zenacoind"
+
+# Nice value to run zenacoind under
+#ZENACOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#ZENACOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for zenacoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+ZENACOIND_SIGTERM_TIMEOUT=60
